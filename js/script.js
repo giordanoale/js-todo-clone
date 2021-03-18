@@ -9,7 +9,7 @@ function addElement (element) {
 
 //Definisco un array di elementi
 var listaSpesa = [
-    "Riviste ose",
+    "Riviste osè",
     "Supposte di glicerina",
     "Bottiglia di whisky",
     "Un paio di confezioni salvaslip",
