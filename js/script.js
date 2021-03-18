@@ -1,3 +1,12 @@
+// Questa funzione aggiunge elementi all'interno della pagina
+function addElement (element) {
+    var template = $(".template li").clone();
+
+    template.prepend(element);
+
+    return $(".to-do").append(template);
+}
+
 //Definisco un array di elementi
 var listaSpesa = [
     "Riviste ose",
@@ -17,9 +26,19 @@ $(".to-do").on("click", ".delete", function(){
 
 // Questo ciclo aggiunge gli elementi dell'array all'interno della lista 
 for (var i = 0; i < listaSpesa.length; i++) {
-    var template = $(".template li").clone();
-
-    template.prepend(listaSpesa[i]);
-
-    $(".to-do").append(template);
+    addElement(listaSpesa[i]);
 }
+
+// Alla pressione del tasto Enter viene aggiunto l'elemento alla lista
+$("#add-element").keydown(function(evento) {
+    
+    if (evento.which == 13) {
+
+        var elemento = $(this).val();
+        
+        if (elemento != "") {
+            addElement(elemento);
+            $(this).val("");
+        }
+    }
+});
