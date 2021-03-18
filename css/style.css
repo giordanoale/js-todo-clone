@@ -14,11 +14,29 @@ header {
     display: flex;
     justify-content: center;
     padding-top: 30px;
+    background-color: #21CAEF;
+    position: relative;
+    height: 200px;
+}
+
+header img {
+    height: 200px;
+    position: absolute;
+    left: 300px;
+    top: 0px;
+}
+
+header h1 {
+    position: absolute;
+    top: 80px;
+    left: 460px;
 }
 
 /* corpo principale */
 .box {
-    margin-left: 30px;
+    background-color: #C2EFB3;
+    padding-top: 50px;
+    padding-left: 50px;
 }
 
 .box ul li {
@@ -30,4 +48,13 @@ header {
     margin-left: 10px;
     color: red;
     cursor: pointer;
+}
+
+label {
+    font-size: 20px;
+}
+
+/* template */
+.template {
+    display: none;
 }

@@ -28,7 +28,8 @@
 
         <!-- intestazione -->
         <header>
-            <h1>To-Do List</h1>
+            <img src="img/homer-header.jpeg">
+            <h1>La lista della spesa del 4 Luglio di Homer</h1>
         </header>
         <!-- /intestazione -->
 
@@ -36,10 +37,10 @@
         <main>
             <div class="box">
                 <ul class="to-do">
-                    <li class="element">Uova <i class="fas fa-times delete"></i></li>
-                    <li class="element">Latte <i class="fas fa-times delete"></i></li>
-
+                    
                 </ul>
+                <label for="">Aggiunti elemento</label>
+                <input id="add-element" type="text" placeholder="Aggiungi un elemento">
             </div>
 
             <div class="box">
@@ -51,6 +52,11 @@
             </div>
         </main>
         <!-- /corpo principale -->
+
+        <!-- template -->
+        <div class="template">
+            <li class="element"><i class="fas fa-times delete"></i></li>
+        </div>
 
         <!-- javascript -->
         <script src="js/script.js"></script>
