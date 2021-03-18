@@ -1,0 +1,33 @@
+/* general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* intestazione */
+header {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+/* corpo principale */
+.box {
+    margin-left: 30px;
+}
+
+.box ul li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.delete{
+    margin-left: 10px;
+    color: red;
+    cursor: pointer;
+}
