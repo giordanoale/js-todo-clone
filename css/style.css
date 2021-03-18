@@ -5,8 +5,14 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: simpsonFont;
+    src: url(../font/simpsonfont.otf);
+  }
+
 body {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: simpsonFont;
 }
 
 /* intestazione */
@@ -38,6 +44,9 @@ header h1 {
     padding-top: 50px;
     padding-left: 50px;
     padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .box ul li {
